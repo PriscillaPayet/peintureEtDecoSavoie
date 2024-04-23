@@ -1,0 +1,47 @@
+hearder{
+display: flex;
+}
+
+.header-logo img{
+  width: 150px ;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 80px
+  
+}
+
+header p{
+  text-align: center;
+  margin-top: 10px;
+  text-transform:uppercase;
+}
+
+.header-burger{
+  display: block;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    z-index: 1100;
+
+}
+
+.barres {
+  width: 21px;
+  height: 2px;
+  background-color: #291717;
+  display: block;
+  transition: all 0.2s;
+  margin-left: 9px;
+  
+}
+
+.barre-millieu {
+  margin-top: 4px;
+  margin-bottom: 4px;
+
+}
