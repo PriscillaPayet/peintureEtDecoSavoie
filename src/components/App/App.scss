@@ -6,3 +6,22 @@ body{
   font-family: $bodyFont;
 }
 
+
+.accentedTitle{
+  font-family: $accentFont;
+  font-size: 3em;
+  text-align: center;
+  color: $black ;
+  background-color: white;
+}
+
+.accentedSubtitle{
+  font-family: $accentFont;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+
+p{
+  padding: 10px
+}
