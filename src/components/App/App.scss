@@ -1,7 +1,8 @@
-@use '../../styles/variables' as v;
+@import '../../styles/variables';
 
 body{
-  background-color: black;
-  color: white;
+  background-color: $black;
+  color: $lightGrey;
+  font-family: $bodyFont;
 }
 

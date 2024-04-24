@@ -1,5 +1,5 @@
 import './Header.scss';
-import logotest from '../../assets/logotest.jpg'
+import logoSansFond from '../../assets/logoSansFond.png'
 import { Link, NavLink } from 'react-router-dom';
 
 function Header() {
@@ -13,14 +13,28 @@ function Header() {
       <span className="barres" id="barreTrois"></span>
     </button>
 
+    <nav className='header-nav'>
+        <NavLink to="#"> Nos produits
+        </NavLink>
+        <NavLink to="#"> A propos
+        </NavLink>
+        <NavLink to="#"> Contact
+        </NavLink>
+        <NavLink to="#"> Avis clients
+        </NavLink>
+
+      </nav>
+
       <NavLink className="header-logo" to="/">
         
         <span className="sr-only">Accueil</span>
-        <img src={logotest} alt="logo Pinture et Déco" />
+        <img src={logoSansFond} alt="logo Pinture et Déco" />
     
       </NavLink>
+      
+      
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+      Bienvenue dans l'univers de Peinture et Déco Savoie, où la créativité rencontre la qualité. 
       </p>
     
     
