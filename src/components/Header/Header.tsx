@@ -1,17 +1,50 @@
 import './Header.scss';
 import logoSansFond from '../../assets/logoSansFond.png'
+import {useState, useEffect} from "react";
 import { Link, NavLink } from 'react-router-dom';
 
 function Header() {
+  //state pour gérer ouvertur et fermetur du menu
+  const [openMenu, setOpenMenu] = useState(false);
+
+  //gérer la modification des classe pour transformer les barres en croix
+  const topBarClassName = openMenu ? "bars cross-one" : "bars" ;
+  const centerBarClassName = openMenu ? "bars middle-bar cross-two" : "bars middle-bar"
+  const bottomBarClassName= openMenu ? "bars cross-three" : "bars";
+
+  //state pour la définition de la taille de l'écran
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const handleClick = () => {
+    setOpenMenu(!openMenu); 
+  };
+  
+  useEffect(()=> {
+    //fonction appelée chaque fois que la taille de l'écran change
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    //Ajoute un écouteur d'évenement 
+    window.addEventListener('resize', handleResize);
+
+     // Nettoyage de l'écouteur d'événements lorsque le composant est démonté
+     return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); // Le tableau vide en tant que deuxième argument assure que cet effet ne se déclenche qu'une seule fois après le montage initial
+
   return (
  
     <header>
 
-    <button className="header-burger" >
-      <span className="barres" id="barreUn"></span>
-      <span className="barres barre-millieu" id="barreDeux"></span>
-      <span className="barres" id="barreTrois"></span>
+    <button className="header-burger" onClick={handleClick} >
+      <span className={topBarClassName} id="topBar"></span>
+      <span className={centerBarClassName} id="centerBar"></span>
+      <span className={bottomBarClassName} id="bottomBar"></span>
     </button>
+
+    {openMenu && ( 
 
     <nav className='header-nav'>
         <NavLink to="#"> Nos produits
@@ -24,6 +57,7 @@ function Header() {
         </NavLink>
 
       </nav>
+      )}
 
       <NavLink className="header-logo" to="/">
         

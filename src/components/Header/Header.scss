@@ -23,12 +23,12 @@ header p{
 }
 
 .header-burger{
-  display: block;
   cursor: pointer;
   border-radius: 50%;
   background-color: $black;
   width: 40px;
   height: 40px;
+  padding-left: 9px;
   position: absolute; 
     top: 20px; 
     right: 20px; 
@@ -36,23 +36,28 @@ header p{
 
 }
 
-.barres {
+.bars {
+  display: block;
   width: 21px;
   height: 2px;
   background-color: $lightGrey;
-  display: block;
   transition: all 0.2s;
-  margin-left: 9px;
+  
+  
+
+ 
   
 }
 
-.barre-millieu {
+.middle-bar {
   margin-top: 4px;
   margin-bottom: 4px;
 
 }
 
 .header-nav{
+  position: fixed;
+    top:0;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -63,5 +68,22 @@ header p{
   text-align: center;
   line-height: 5em;
   height: 50vh;
+  width: 100%;
+  font-size: 1.2em;
+  z-index: 1000;
+ 
 
+}
+
+.cross-one{
+  transform: rotate(45deg) translate(5px, 5px);
+
+}
+
+.cross-two{
+  opacity: 0;
+}
+
+.cross-three{
+  transform: rotate(-45deg) translate(4px, -4px);
 }
