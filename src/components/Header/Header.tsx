@@ -45,19 +45,15 @@ function Header() {
     </button>
 
     {openMenu && ( 
-
     <nav className='header-nav'>
-        <NavLink to="#"> Nos produits
-        </NavLink>
-        <NavLink to="#"> A propos
-        </NavLink>
-        <NavLink to="#"> Contact
-        </NavLink>
-        <NavLink to="#"> Avis clients
-        </NavLink>
-
-      </nav>
-      )}
+      <ul>
+        <li><NavLink to="#"> Nos produits </NavLink></li>
+        <li><NavLink to="#"> A propos </NavLink></li>
+        <li><NavLink to="#"> Contact </NavLink></li>
+        <li><NavLink to="#"> Avis clients </NavLink></li>
+      </ul>
+    </nav>
+    )}
 
       <NavLink className="header-logo" to="/">
         
