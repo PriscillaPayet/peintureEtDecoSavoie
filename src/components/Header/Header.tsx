@@ -11,13 +11,15 @@ function Header() {
   const topBarClassName = openMenu ? "bars cross-one" : "bars" ;
   const centerBarClassName = openMenu ? "bars middle-bar cross-two" : "bars middle-bar"
   const bottomBarClassName= openMenu ? "bars cross-three" : "bars";
+  
+  const handleClick = () => {
+    setOpenMenu(!openMenu); 
+  };
 
   //state pour la définition de la taille de l'écran
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  const handleClick = () => {
-    setOpenMenu(!openMenu); 
-  };
+  
   
   useEffect(()=> {
     //fonction appelée chaque fois que la taille de l'écran change
@@ -44,7 +46,7 @@ function Header() {
       <span className={bottomBarClassName} id="bottomBar"></span>
     </button>
 
-    {openMenu && ( 
+    {openMenu && windowWidth < 900 && ( 
     <nav className='header-nav'>
       <ul>
         <li><NavLink to="#"> Nos produits </NavLink></li>
