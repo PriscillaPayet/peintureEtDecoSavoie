@@ -8,12 +8,8 @@ body{
 
 
 
-
-
-
-
 .accentedTitle{
-  font-family: $accentFont;
+  font-family: $playlist;
   font-size: 3em;
   text-align: center;
   color: $black ;
@@ -21,10 +17,10 @@ body{
 }
 
 .accentedSubtitle{
-  font-family: $accentFont;
+  font-family: $playlist;
   text-align: center;
-  font-size: 2em;
-  color: white;
+  font-size: 2.5em;
+  color: $black;
 }
 
 p{

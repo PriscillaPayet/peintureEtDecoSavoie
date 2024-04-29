@@ -9,3 +9,4 @@ To run this project, you'll need to have the following dependencies installed :
 - [react-dom](https://reactjs.org/docs/react-dom.html) - Version 18.2.0
 - [react-router-dom](https://reactrouter.com/web/guides/quick-start) - Version 6
 - [tailwindcss](https://tailwindcss.com/) - Version 3.3.2
+-yarn add google-maps-react
