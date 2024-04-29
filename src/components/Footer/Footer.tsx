@@ -7,6 +7,7 @@ import location_icon from '../../assets/location_icon.png'
 import linkedin_icon from '../../assets/linkedin_icon.png';
 import facebook_icon from '../../assets/facebook_icon.png';
 import instagram_icon from '../../assets/instagram_icon.png';
+import { Map, GoogleApiWrapper } from 'google-maps-react';
 
 
 
@@ -15,13 +16,12 @@ function Footer(){
     <div className='footer-container'>
       
       <h1 className="accentedTitle">Venez nous rendre visite</h1>
-      <div className='address-container'>
         <address>
         Peinture et Déco Savoie,
         176 Rue des Blâches,
         73250 Saint-Pierre d'Albigny
       </address>
-      </div>
+      
 
       <div className='horaire-container'>
         <h2 className='accentedSubtitle' >Horaires d'ouverture</h2>
