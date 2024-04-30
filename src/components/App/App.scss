@@ -6,20 +6,26 @@ body{
   font-family: $bodyFont;
 }
 
-
-
-.accentedTitle{
+.title, .whiteTitle{
   font-family: $playlist;
-  font-size: 3em;
+  font-size: 2.5em;
   text-align: center;
-  color: $black ;
-  background-color: white;
+  
 }
 
-.accentedSubtitle{
+.title{
+  background-color: white;
+  color: $black;
+}
+
+.whiteTitle{
+  color: $lightGrey;
+}
+
+.subtitle{
   font-family: $playlist;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2em;
   color: $black;
 }
 

@@ -1,13 +1,11 @@
 import './Footer.scss';
-import {useState, useEffect} from "react";
-import { Link, NavLink } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import phone_icon from '../../assets/phone_icon.png';
 import email_icon from '../../assets/email_icon.png';
-import location_icon from '../../assets/location_icon.png'
 import linkedin_icon from '../../assets/linkedin_icon.png';
 import facebook_icon from '../../assets/facebook_icon.png';
 import instagram_icon from '../../assets/instagram_icon.png';
-import { Map, GoogleApiWrapper } from 'google-maps-react';
+
 
 
 
@@ -15,16 +13,18 @@ function Footer(){
    return(
     <div className='footer-container'>
       
-      <h1 className="accentedTitle">Venez nous rendre visite</h1>
-        <address>
-        Peinture et Déco Savoie,
-        176 Rue des Blâches,
-        73250 Saint-Pierre d'Albigny
-      </address>
+      <h1 className='title'>Venez nous rendre visite</h1>
+      <div className='address'>
+        <address >
+          <p>Peinture et Déco Savoie,
+          176 Rue des Blâches,
+          73250 Saint-Pierre d'Albigny</p>
+        </address>
+      </div>
       
 
       <div className='horaire-container'>
-        <h2 className='accentedSubtitle' >Horaires d'ouverture</h2>
+        <h2 className='subtitle'>Horaires d'ouverture</h2>
         <p>Nous vous accueillons du lundi au vendredi de 7h30 à 12h00, puis de 14h00 à 18h30, et le samedi, de 8h30 à 12h00, hors jours fériés. </p>
       </div>
 

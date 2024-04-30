@@ -140,16 +140,7 @@ function Header() {
         )}
 
     </div>
-      
-     
-    
 
-      {/* 
-      à déplacer sur home 
-      <blockquote>
-        Bienvenue dans l'univers de Peinture et Déco Savoie, la solution déco particulier et professionnel. 
-      </blockquote> */} 
-      
         
     </header>
     

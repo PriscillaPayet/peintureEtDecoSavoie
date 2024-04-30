@@ -2,22 +2,23 @@
 .footer-container{
   background-color: $lightGrey;
   color: $darkGrey;
+ 
 }
 .icon{
   width: 30px;
-  height: 30px;
-
+  margin: 0;
 }
 
-address{  
+.address {  
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
 }
 
-address, p{
-  text-align: center;
-}
 
 
 .horaire-container{
@@ -25,28 +26,24 @@ address, p{
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
-
 .horaire-container p{
-  font-size: 1em;
   font-family: $trocchi;
   width: 300px;
   margin-top: 0;
 }
 
 
-address {
-  padding-top: 20px;
-  display: flex;
-  align-items: center;
-}
 
 .phone, .email, .rs{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 40%;
+  margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
 
@@ -57,12 +54,18 @@ address {
 }
 
 .footer-bottom{
+  font-size: 0.85em;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $black;
   color: $lightGrey;
-  font-size: .8em;
   text-transform: uppercase;
+}
+
+
+.title{
+  background-color: $pink;
+  color: $lightGrey;
 }
 
