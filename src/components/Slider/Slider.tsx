@@ -1,3 +1,4 @@
+import  './Slider.scss';
 import React, { useState } from 'react';
 import { SliderProps } from '../../@types/interface';
 

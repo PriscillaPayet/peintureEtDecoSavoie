@@ -5,7 +5,16 @@
 .slider{
   display: flex;
   justify-content: center;
+  flex-direction: column;
   
 }
 
-
+@media screen and (min-width: 900px) {
+  .slider-image {
+    width: 100vw; 
+    height: auto; 
+    max-height: 500px; 
+    object-fit: cover; 
+  }
+  
+}
