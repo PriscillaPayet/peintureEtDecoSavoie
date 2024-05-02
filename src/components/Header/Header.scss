@@ -9,6 +9,7 @@
   background-color: rgba(0,0,0, 0.7);
 }
 
+
 .header-logo img{
   width:200px ;
   margin-right: auto;
@@ -139,10 +140,16 @@ display: none;
   }
 
   .header-logo img{
-    width: 300px ;
+    width: 250px ;
     margin-right: auto;
     margin-left: auto;
     
+  }
+
+  .sticky img{
+    width: 200px;
+    opacity: .9;
+  
   }
   
   .header-container{
