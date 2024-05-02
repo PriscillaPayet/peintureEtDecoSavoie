@@ -1,5 +1,12 @@
 @import '../../styles/variables';
 
+img{
+  margin: auto;
+  width: auto;
+
+}
+
+
 .home-container{
   padding-top: 10px;
   display: flex;
@@ -8,34 +15,33 @@
   align-items: center;
 }
 
-img{
-  margin: auto;
-  width: auto;
 
-}
+
 
 .home-introduction{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 
 }
 
-.introduction{
-  margin: auto;
-  max-width: 95%;
-  margin-bottom: 20px;
-  
+.introduction-text h1{
+  font-family: $playlist;
+  font-size: 2.5em;
+  text-align: center;
 }
 
-.introduction p{
- 
+.introduction-text p{
   text-align: justify;
+  margin-bottom: 10px;
  
-  
 }
+ 
+
 
 .slider-dots {
   display: flex;
@@ -60,11 +66,30 @@ blockquote{
   text-transform: uppercase;
   font-size: .8em;
   padding-bottom: 20px;
+  margin-top: 20px;
 
 }
 
 .horaire-container p, .address p {
   text-align: center;
+}
+
+.qualities-container {
+  width: 100vw;
+  background-color: $lightGrey;
+  color: $darkGrey;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center;
+
+
+  
+}
+
+.quality {
+  width: 50%;
+  padding: 20px;
 }
 
 @media screen and (min-width: 900px) {
@@ -76,30 +101,41 @@ blockquote{
 
 
 .home-introduction{
-  padding: 20px;
-  margin-top: 20px;
+ 
   display: flex;
   flex-direction: row;
+  width: 100%;
+  height: 50vh;
+  margin: auto;
  
 }
 
+.home-introduction img{
 
-.automaticSlider-container, .introduction{
-  width: 50%;
-  padding: 20px;
-}
-
-
-.automaticSlider-container {
   max-width: 500px;
+  padding-left: 50px;
 }
+
+.introduction-text{
+  width: 50%;
+
+}
+
+
+
+.quality {
+  width: 25%;
+}
+
+ 
 
 }
 
 @media screen and (min-width: 1200px) {
-  .automaticSlider-container {
-    max-width: 700px;
+ 
+  .home-introduction{
+    margin-top: 30px;
+   
   }
   
-
 }

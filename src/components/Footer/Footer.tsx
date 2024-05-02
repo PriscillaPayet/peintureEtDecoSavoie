@@ -16,9 +16,9 @@ function Footer(){
       <h1 className='title'>Venez nous rendre visite</h1>
       <div className='address'>
         <address >
-          <p>Peinture et Déco Savoie,
+          Peinture et Déco Savoie,
           176 Rue des Blâches,
-          73250 Saint-Pierre d'Albigny</p>
+          73250 Saint-Pierre d'Albigny
         </address>
       </div>
       
@@ -56,11 +56,17 @@ function Footer(){
 
  
     <div className='footer-bottom'>
-      <Link to='/'> 
-      Mentions Légales
-      </Link>
-      <p>-</p>
-      <p>Site réalisé par Priscilla Payet</p>
+      <ul className='footer-bottom-list'>
+        <li>
+          <Link to='/'> Mentions Légales</Link>
+        </li>
+        <li>
+          <p>-</p>
+        </li>
+        <li>
+          <p>Site réalisé par Priscilla Payet</p>
+        </li>
+      </ul>
     </div>
   </div>
     
