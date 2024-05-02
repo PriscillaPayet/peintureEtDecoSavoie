@@ -24,7 +24,9 @@ function Home() {
           Bienvenue dans l'univers de Peinture et Déco Savoie, la solution déco particulier et professionnel. 
         </blockquote> 
 
-        <Slider images={images} />
+        <div className='illustration-slider'>
+          <Slider images={images} />
+        </div>
 
       </section>
 
