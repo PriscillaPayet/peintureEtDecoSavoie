@@ -13,7 +13,7 @@ function Footer(){
    return(
     <div className='footer-container'>
       
-      <h1 className='title'>Venez nous rendre visite</h1>
+      <h1 className='pinkTitle'>Venez nous rendre visite</h1>
       <div className='address'>
         <address >
           Peinture et Déco Savoie,

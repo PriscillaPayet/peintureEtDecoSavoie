@@ -114,8 +114,8 @@ function Header() {
       <nav className='header-nav'>
         <ul>
           <li><NavLink to="#"> Nos produits </NavLink></li>
-          <li><NavLink to="#"> A propos </NavLink></li>
-          <li><NavLink to="#"> Contact </NavLink></li>
+          <li><NavLink to="/about"> A propos </NavLink></li>
+          <li><NavLink to="/contact"> Contact </NavLink></li>
           <li><NavLink to="#"> Avis clients </NavLink></li>
         </ul>
       </nav>
@@ -129,7 +129,7 @@ function Header() {
           <ul>
             <li><NavLink to="#">Nos produits</NavLink></li>
             <li className='pink'>|</li>
-            <li><NavLink to="#"> A propos</NavLink></li>
+            <li><NavLink to="/about"> A propos</NavLink></li>
             <li className='pink'>|</li>
             <li><NavLink to="#"> Contact</NavLink></li>
             <li className='pink'>|</li>

@@ -7,9 +7,9 @@ body{
 
 }
 
-.title, .whiteTitle{
+.title, .whiteTitle, .pinkTitle{
   font-family: $playlist;
-  font-size: 2.5em;
+  font-size: 3em;
   text-align: center;
   
 }
@@ -20,14 +20,37 @@ body{
 }
 
 .whiteTitle{
-  color: $lightGrey;
+  background-color: none;
+  color: white;
 }
 
-.subtitle{
+
+ .pinkTitle{
+  background-color: $pink;
+}
+
+.subtitle,  .whiteSubtitle{
+  color: $black;
   font-family: $playlist;
   text-align: center;
   font-size: 2em;
-  color: $black;
 }
+
+.whiteSubtitle{
+  color: white;
+}
+
+.pinkTitle{
+  background-color: $pink;
+  color: $lightGrey;
+}
+
+.paragraph{
+  text-align: justify;
+  margin: 20px;
+ 
+}
+
+
 
 
