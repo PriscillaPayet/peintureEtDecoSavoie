@@ -9,7 +9,7 @@ function About() {
 
   return (
     <div className="about-container">
-      <h1 className='title'> Notre chemin en couleur</h1>
+      <h1 className='title'> Notre parcours en couleur</h1>
       <div className='about-main'>
         <div className='about-subtitle'>
           <h2 className='whiteSubtitle'>L'équipe derrière chaque nuance</h2>
