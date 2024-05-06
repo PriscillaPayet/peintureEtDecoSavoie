@@ -17,18 +17,18 @@ function Products() {
       productLink: 'lien_vers_la_page_revêtement_de_sol'
     },
     {
-      productName: 'Revêtement mural',
+      productName: 'Peinture',
       productImage: test3,
       productLink: 'lien_vers_la_page_revêtement_mural'
     },
     {
       productName: 'Revêtement mural',
-      productImage: test3,
+      productImage: test4,
       productLink: 'lien_vers_la_page_revêtement_mural'
     },
     {
-      productName: 'Revêtement mural',
-      productImage: test3,
+      productName: 'Autres produits',
+      productImage: test2,
       productLink: 'lien_vers_la_page_revêtement_mural'
     },
  

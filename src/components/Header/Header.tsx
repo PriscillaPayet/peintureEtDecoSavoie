@@ -113,7 +113,7 @@ function Header() {
       {openMenu && windowWidth < 900 && ( 
       <nav className='header-nav'>
         <ul>
-          <li><NavLink to="#"> Nos produits </NavLink></li>
+          <li><NavLink to="/products"> Nos produits </NavLink></li>
           <li><NavLink to="/about"> A propos </NavLink></li>
           <li><NavLink to="/contact"> Contact </NavLink></li>
           <li><NavLink to="#"> Avis clients </NavLink></li>
@@ -127,7 +127,7 @@ function Header() {
 
         <nav className='header-bigScreenNav'>
           <ul>
-            <li><NavLink to="#">Nos produits</NavLink></li>
+            <li><NavLink to="/products">Nos produits</NavLink></li>
             <li className='pink'>|</li>
             <li><NavLink to="/about"> A propos</NavLink></li>
             <li className='pink'>|</li>
