@@ -9,3 +9,9 @@ export interface IconData {
   description: string;
 }
 
+export interface ProductData {
+  productName: string;
+  productImage: string;
+  productLink: string;
+  className?: string; 
+}
