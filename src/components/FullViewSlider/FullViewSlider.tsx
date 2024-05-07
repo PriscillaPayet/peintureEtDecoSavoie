@@ -11,14 +11,14 @@ function FullViewSlider({ images }: { images: LogoData[] }) {
 
 
 
-     //gérer le défilement: image centrale qui change toutes les 5 secondes
+     //gérer le défilement: image centrale qui change toutes les 3 secondes
     useEffect(() => {
       const interval = setInterval(() => {
         setCurrentIndex(prevIndex =>
           //si on arrive à al fin du tableau, on repart au début
           prevIndex === images.length - 1 ? 0 : prevIndex + 1
         );
-      }, 5000); 
+      }, 3000); 
   
       // Nettoyage de l'intervalle lorsque le composant est démonté
       return () => clearInterval(interval);

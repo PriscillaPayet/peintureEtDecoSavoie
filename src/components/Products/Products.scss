@@ -1,22 +1,3 @@
 @import '../../styles/variables';
 
-.provider-container img{
-  width: 100px;
-}
-
-@media (min-width: 900px){
-  .category-list{
-    margin: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-   
-  }
-  
-  .category-list li{
-    width: 50%;
-    padding: 5px;
-  }
-}
-
 

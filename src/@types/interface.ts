@@ -21,3 +21,9 @@ export interface LogoData {
   link: string;
   alt: string;
 }
+
+export interface IntroductionTextProps {
+  title: string;
+  subtitle: string;
+  paragraph: string;
+}

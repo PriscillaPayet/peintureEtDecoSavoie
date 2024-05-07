@@ -10,6 +10,7 @@ import insta from '../../assets/instagram_icon.png';
 import logo from '../../assets/logoSansFond.png';
 import linkedin from '../../assets/linkedin_icon.png';
 import CarouselLogos from '../CarouselLogos/CarouselLogos';
+import CategoryList from '../CategoryList/CategoryList';
 
 
 
@@ -19,22 +20,22 @@ function Products() {
     {
       productName: 'Revêtement de sol',
       productImage: test2,
-      productLink: 'lien_vers_la_page_revêtement_de_sol'
+      productLink: '/products/floors'
     },
     {
       productName: 'Peinture',
       productImage: test3,
-      productLink: 'lien_vers_la_page_revêtement_mural'
+      productLink: '/products/paint'
     },
     {
       productName: 'Revêtement mural',
       productImage: test4,
-      productLink: 'lien_vers_la_page_revêtement_mural'
+      productLink: '/products/walls'
     },
     {
       productName: 'Autres produits',
       productImage: test2,
-      productLink: 'lien_vers_la_page_revêtement_mural'
+      productLink: '/products/others'
     },
  
   ];
@@ -44,18 +45,7 @@ function Products() {
   return (
     <div className="nos-produits">
       <h1 className='title'>Nos Produits</h1>
-      <ul className="category-list">
-        {categories.map((category, index) => (
-          <li>
-            <ProductCard 
-              key={index} 
-              productName={category.productName}
-              productImage={category.productImage}
-              productLink={category.productLink}
-            />
-            </li>
-        ))}
-      </ul>
+      <CategoryList categories={categories} />
       <CarouselLogos/>
        </div>
   );

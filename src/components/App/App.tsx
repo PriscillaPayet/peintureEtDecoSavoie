@@ -5,7 +5,10 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Home from '../Home/Home';
 import About from '../About/About';
-import Products from '../Products/Products'
+import Products from '../Products/Products';
+import Floors from '../Floors/Floors';
+import Walls from '../Walls/Walls';
+import Paints from '../Paints/Paints';
 
 
 function App() {
@@ -16,6 +19,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/products/floors" element={<Floors />} />
+        <Route path="/products/walls" element={<Walls />} />
+        <Route path="/products/paints" element={<Paints />} />
       </Routes>
       
       < Footer />

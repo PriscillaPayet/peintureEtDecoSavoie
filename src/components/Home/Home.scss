@@ -16,24 +16,6 @@ img{
 }
 
 
-.home-introduction{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-
-}
-
-.introduction-text h1{
-  font-family: $playlist;
-  font-size: 2.5em;
-  text-align: center;
-}
-
-
 .slider-dots {
   display: flex;
   justify-content: center;
@@ -61,8 +43,10 @@ blockquote{
 
 }
 
-.horaire-container p, .address p {
-  text-align: center;
+
+.automaticSlider-container{
+  margin-bottom:20px;
+  margin-top:20px;
 }
 
 .qualities-container {
@@ -81,50 +65,50 @@ blockquote{
   padding: 20px;
 }
 
-@media screen and (min-width: 900px) {
 
-.accroche{
-  padding-top: 20px;
-  font-size: 1em;
-}
-
-
-.home-introduction{
- 
+.introduction-section{
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 50vh;
-  margin: auto;
- 
-}
-
-.home-introduction img{
-
-  max-width: 500px;
-  padding-left: 50px;
-}
-
-.introduction-text{
-  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 
 }
 
-
-
-.quality {
-  width: 25%;
+.text-container, .automaticSlider-container {
+  flex: 0 0 100%; /* Les éléments prennent 100% de la largeur par défaut */
 }
 
- 
+
+@media (min-width: 900px) {
+
+
+  .introduction-section{
+    flex-direction: row;
+    flex-wrap:wrap;
+  }
+
+  .text-container, .automaticSlider-container{
+    flex: 0 0 45%; /* Les éléments prennent 45% de la largeur à partir de 900px */
+    margin: 20px;
+  }
+
+
+  .accroche{
+    padding-top: 20px;
+    font-size: 1em;
+  }
+
+
+  .quality {
+    width: 25%;
+  }
+
 
 }
 
 @media screen and (min-width: 1200px) {
- 
-  .home-introduction{
-    margin-top: 30px;
-   
-  }
-  
 }
+
