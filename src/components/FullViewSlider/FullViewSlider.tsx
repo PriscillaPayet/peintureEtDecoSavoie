@@ -34,31 +34,31 @@ function FullViewSlider({ images }: { images: LogoData[] }) {
     const fourthNextIndex = (nextIndex === images.length - 1) ? 0 : nextIndex + 1;
 
     return (
-      <div className="full-view-slider">
-      {/* Image précédente */}
-      <Link to={images[secondPrevIndex].link} className="slider-image second-previous">
-        <img src={images[secondPrevIndex].url} alt={images[secondPrevIndex].alt} />
-      </Link>
+      <div className="slider-container">
+        {/* Image précédente */}
+        <Link to={images[secondPrevIndex].link} className="slider-image second-previous">
+          <img src={images[secondPrevIndex].url} alt={images[secondPrevIndex].alt} />
+        </Link>
 
-      {/* Image précédente */}
-      <Link to={images[prevIndex].link} className="slider-image previous">
-        <img src={images[prevIndex].url} alt={images[prevIndex].alt} />
-      </Link>
+        {/* Image précédente */}
+        <Link to={images[prevIndex].link} className="slider-image previous">
+          <img src={images[prevIndex].url} alt={images[prevIndex].alt} />
+        </Link>
 
-      {/* Image actuelle au centre */}
-      <Link to={images[currentIndex].link} className="slider-image current">
-        <img src={images[currentIndex].url} alt={images[currentIndex].alt} />
-      </Link>
+        {/* Image actuelle au centre */}
+        <Link to={images[currentIndex].link} className="slider-image current">
+          <img src={images[currentIndex].url} alt={images[currentIndex].alt} />
+        </Link>
 
-      {/* Image suivante */}
-      <Link to={images[nextIndex].link} className="slider-image next">
-        <img src={images[nextIndex].url} alt={images[nextIndex].alt} />
-      </Link>
+        {/* Image suivante */}
+        <Link to={images[nextIndex].link} className="slider-image next">
+          <img src={images[nextIndex].url} alt={images[nextIndex].alt} />
+        </Link>
 
-      {/* Image suivante */}
-      <Link to={images[fourthNextIndex].link} className="slider-image fourth-next">
-        <img src={images[fourthNextIndex].url} alt={images[fourthNextIndex].alt} />
-      </Link>
+        {/* Image suivante */}
+        <Link to={images[fourthNextIndex].link} className="slider-image fourth-next">
+          <img src={images[fourthNextIndex].url} alt={images[fourthNextIndex].alt} />
+        </Link>
     </div>
   );
 }
