@@ -15,3 +15,9 @@ export interface ProductData {
   productLink: string;
   className?: string; 
 }
+
+export interface LogoData {
+  url: string;
+  link: string;
+  alt: string;
+}
