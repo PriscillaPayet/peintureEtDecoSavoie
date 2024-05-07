@@ -10,7 +10,7 @@ import IntroductionText from '../IntroductionSection/IntroductionText';
 
 
 
-function Products() {
+function Paints() {
   
   const images = [test2,test3,test4];
 
@@ -35,4 +35,4 @@ function Products() {
   );
 };
 
-export default Products;
+export default Paints;
