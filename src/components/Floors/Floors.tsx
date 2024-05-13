@@ -49,7 +49,9 @@ function Floors(){
 return (
   <div className="nos-produits">
       <h1 className='title'>Nos Revêtements de sol</h1>
-      <CategoryList categories={floorCategories} />
+      <div className='floorCategory-list'>
+        <CategoryList categories={floorCategories} />
+      </div>
       <FullViewSlider images={floorLogos} />
     
   </div>
