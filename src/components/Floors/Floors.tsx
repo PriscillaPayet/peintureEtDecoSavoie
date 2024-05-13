@@ -37,10 +37,16 @@ function Floors(){
       productLink: 'lien_vers_la_page_moquette'
     },
     {
-      productName: 'Gazon',
+      productName: 'Sol Stratifié',
       productImage: test2,
       productLink: 'lien_vers_la_page_gazon'
     },
+    {
+      productName: 'Sol extérieur',
+      productImage: test2,
+      productLink: 'lien_vers_la_page_gazon'
+    },
+
  
   ];
 
