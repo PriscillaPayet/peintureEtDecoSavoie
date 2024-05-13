@@ -12,6 +12,12 @@ import sob from '../assets/logos-fournisseurs/peinture/sob.jpg';
 import caselio from '../assets/logos-fournisseurs/mur/caselio.svg';
 import casamance from '../assets/logos-fournisseurs/mur/casamance.svg';
 import casadeco from '../assets/logos-fournisseurs/mur/casadeco.webp';
+import outilParfait from '../assets/logos-fournisseurs/autre/outilParfait.png';
+import romus from '../assets/logos-fournisseurs/autre/romus.png';
+import blanchon from '../assets/logos-fournisseurs/autre/blanchon.png';
+import uzin from '../assets/logos-fournisseurs/autre/uzin.svg';
+import bessier from '../assets/logos-fournisseurs/autre/beissier.png';
+import komar from '../assets/logos-fournisseurs/mur/komar.png';
 
 
 
@@ -67,6 +73,11 @@ export const logos: LogoData[] = [
     alt: 'lien vers caselio' 
   },
   { type:"wall", 
+    url: komar, 
+    link: 'https://www.komar.de/fr/',
+    alt: 'lien vers komar' 
+},
+  { type:"wall", 
   url: casamance, 
   link: 'https://www.casamance.com/fr/',
   alt: 'lien vers casamance' 
@@ -75,5 +86,30 @@ export const logos: LogoData[] = [
   url: casadeco, 
   link: 'https://www.casadeco.com/fr/',
   alt: 'lien vers casadeco' 
+  },
+  { type:"other", 
+  url: outilParfait, 
+  link:  'https://www.outilparfait.com/',
+  alt: 'lien vers outil parfait' 
+  },
+  { type:"other", 
+  url: romus, 
+  link:  'https://www.romusworld.com/',
+  alt: 'lien vers romusworld' 
+  },
+  { type:"other", 
+  url: blanchon, 
+  link:  'https://www.blanchon.com/',
+  alt: 'lien vers blanchon' 
+  },
+  { type:"other", 
+  url: uzin, 
+  link:  'https://fr.uzin.com/',
+  alt: 'lien vers uzin' 
+  },
+  { type:"other", 
+  url: bessier, 
+  link:  'https://www.beissier.fr/',
+  alt: 'lien vers bessier' 
   },
 ];
