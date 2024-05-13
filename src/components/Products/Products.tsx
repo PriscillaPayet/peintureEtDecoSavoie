@@ -25,7 +25,7 @@ function Products() {
     {
       productName: 'Peinture',
       productImage: test3,
-      productLink: '/products/paint'
+      productLink: '/products/paints'
     },
     {
       productName: 'Revêtement mural',
