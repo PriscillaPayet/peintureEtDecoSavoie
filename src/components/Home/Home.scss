@@ -44,7 +44,7 @@ blockquote{
 }
 
 
-.automaticSlider-container{
+.introduction-img{
   margin-bottom:20px;
   margin-top:20px;
 }
@@ -90,7 +90,7 @@ blockquote{
     flex-wrap:wrap;
   }
 
-  .text-container, .automaticSlider-container{
+  .text-container, .introduction-img{
     flex: 0 0 45%; /* Les éléments prennent 45% de la largeur à partir de 900px */
     margin: 20px;
   }

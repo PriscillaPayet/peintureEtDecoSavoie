@@ -18,7 +18,7 @@ import IntroductionText from '../IntroductionSection/IntroductionText';
 
 function Home() {
   const images = [test4,test3];
-  const images2 = [test2, cotton]
+ 
 
   const qualitiesData = [
     {
@@ -69,10 +69,10 @@ function Home() {
             paragraph="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, nobis debitis! Nam odio et quae neque beatae repudiandae itaque eligendi temporibus voluptatibus sapiente nesciunt molestias culpa maiores, facere illum qui dicta non vitae dignissimos. Esse ipsa atque tempora et adipisci excepturi, in, voluptatibus, commodi similique corrupti qui? Nulla ratione sit nobis molestiae eum, tempora iste neque harum? Animi architecto facere qui omnis aspernatur eaque nostrum consequuntur! Perspiciatis illo atque porro quisquam, tempora aliquam praesentium quidem expedita alias."
           />
         </div>
-
-        <div className='automaticSlider-container'>
-          <AutomaticSlider images={images2} />
+        <div className='introduction-img'>
+          <img src = {cotton} alt="photo de magasin" />
         </div>
+
       </section>
 
       <section>
