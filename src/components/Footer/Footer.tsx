@@ -36,7 +36,7 @@ function Footer(){
 
         <div className='email'>
           <img className="icon" src={email_icon} alt="icone email" />
-          <Link to="mailto:peintureetdecosavoie@outlook.fr" className='emailLink'>peintureetdecosavoie@outlook.fr</Link>
+          <Link to="mailto:savoie@peintureetdeco.com" className='emailLink'>peintureetdecosavoie@outlook.fr</Link>
 
         </div>
 
