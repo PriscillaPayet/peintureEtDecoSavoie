@@ -1,7 +1,5 @@
 import  './Products.scss';
 import React, { useState } from 'react';
-import ProductCard from '../ProductCard/ProductCard';
-import AutomaticSlider from '../AutomaticSlider/AutomaticSlider';
 import { LogoData, ProductData } from '../../@types/interface';
 import test2 from '../../assets/test2.jpg';
 import test3 from '../../assets/test3.jpg';
@@ -9,7 +7,6 @@ import test4 from '../../assets/test4.jpg';
 import insta from '../../assets/instagram_icon.png';
 import logo from '../../assets/logoSansFond.png';
 import linkedin from '../../assets/linkedin_icon.png';
-import CarouselLogos from '../CarouselLogos/CarouselLogos';
 import CategoryList from '../CategoryList/CategoryList';
 import FullViewSlider from '../FullViewSlider/FullViewSlider';
 

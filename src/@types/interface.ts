@@ -20,6 +20,7 @@ export interface LogoData {
   url: string;
   link: string;
   alt: string;
+  type?: String;
 }
 
 export interface IntroductionTextProps {

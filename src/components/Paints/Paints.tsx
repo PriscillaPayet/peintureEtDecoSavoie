@@ -6,6 +6,9 @@ import test4 from '../../assets/test4.jpg';
 import CarouselLogos from '../CarouselLogos/CarouselLogos';
 import Slider from '../Slider/Slider';
 import IntroductionText from '../IntroductionSection/IntroductionText';
+import { LogoData } from '../../@types/interface';
+import FullViewSlider from '../FullViewSlider/FullViewSlider';
+import { logos } from '../../data/data';
 
 
 
@@ -13,6 +16,7 @@ import IntroductionText from '../IntroductionSection/IntroductionText';
 function Paints() {
   
   const images = [test2,test3,test4];
+  const paintLogos: LogoData[] = logos.filter(logo => logo.type === 'paint');
 
   return (
     <>
@@ -30,7 +34,7 @@ function Paints() {
         </div>
 
       </div>
-      <CarouselLogos />
+      <FullViewSlider images={paintLogos} />
     </>
   );
 };
