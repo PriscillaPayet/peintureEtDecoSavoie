@@ -2,10 +2,12 @@ import './Wall.scss'
 import test2 from '../../assets/test2.jpg';
 import test3 from '../../assets/test3.jpg';
 import test4 from '../../assets/test4.jpg';
-import { ProductData } from '../../@types/interface';
+import { LogoData, ProductData } from '../../@types/interface';
 import ProductCard from '../ProductCard/ProductCard';
 import CarouselLogos from '../CarouselLogos/CarouselLogos';
 import CategoryList from '../CategoryList/CategoryList';
+import { logos } from '../../data/data';
+import FullViewSlider from '../FullViewSlider/FullViewSlider';
 
 function Floors(){
 
@@ -29,12 +31,16 @@ function Floors(){
     },
  
   ];
+
+  const wallLogos: LogoData[] = logos.filter(logo => logo.type === 'wall');
 return (
   <div className="nos-produits">
       <h1 className='title'>Nos Revêtements Muraux</h1>
-      <CategoryList categories={wallCategories} />
-      <CarouselLogos/>
-       </div>
+      <div className='wallCategory-list'>
+        <CategoryList categories={wallCategories} />
+      </div>
+      <FullViewSlider images={wallLogos} />
+    </div>
   );
 
 }

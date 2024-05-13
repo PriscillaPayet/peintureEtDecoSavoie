@@ -9,6 +9,10 @@ import tarkett from '../assets/logos-fournisseurs/sol/tarkett.svg';
 import udirev from '../assets/logos-fournisseurs/sol/udirevcom.jpg';
 import icoPeint from '../assets/logos-fournisseurs/peinture/Icopeint.png';
 import sob from '../assets/logos-fournisseurs/peinture/sob.jpg';
+import caselio from '../assets/logos-fournisseurs/mur/caselio.svg';
+import casamance from '../assets/logos-fournisseurs/mur/casamance.svg';
+import casadeco from '../assets/logos-fournisseurs/mur/casadeco.webp';
+
 
 
 export const logos: LogoData[] = [
@@ -57,5 +61,19 @@ export const logos: LogoData[] = [
     link: 'https://www.sob.fr/',
     alt: 'lien vers sob' 
   },
-  
+  { type:"wall", 
+    url: caselio, 
+    link: 'https://www.caselio.com/fr/',
+    alt: 'lien vers caselio' 
+  },
+  { type:"wall", 
+  url: casamance, 
+  link: 'https://www.casamance.com/fr/',
+  alt: 'lien vers casamance' 
+  },
+  { type:"wall", 
+  url: casadeco, 
+  link: 'https://www.casadeco.com/fr/',
+  alt: 'lien vers casadeco' 
+  },
 ];
