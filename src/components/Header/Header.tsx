@@ -93,6 +93,12 @@ function Header() {
     };
   }, []);
 
+    const handleCloseMenu = () => {
+    setOpenMenu(false);
+    }
+
+
+
   return (
  
     <header className={isSticky ? 'sticky' : ''}>
@@ -113,10 +119,10 @@ function Header() {
       {openMenu && windowWidth < 900 && ( 
       <nav className='header-nav'>
         <ul>
-          <li><NavLink to="/products"> Nos produits </NavLink></li>
-          <li><NavLink to="/about"> A propos </NavLink></li>
-          <li><NavLink to="/contact"> Contact </NavLink></li>
-          <li><NavLink to="#"> Avis clients </NavLink></li>
+          <li><NavLink to="/products" onClick={handleCloseMenu}> Nos produits </NavLink></li>
+          <li><NavLink to="/about" onClick={handleCloseMenu}> A propos </NavLink></li>
+          <li><NavLink to="/contact" onClick={handleCloseMenu}> Contact </NavLink></li>
+          <li><NavLink to="#" onClick={handleCloseMenu}> Avis clients </NavLink></li>
         </ul>
       </nav>
       )}
