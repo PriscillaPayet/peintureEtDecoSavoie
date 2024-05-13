@@ -6,6 +6,10 @@
   align-items: center;
   overflow: hidden;
   margin: 0;
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
   
 }
 
@@ -14,10 +18,10 @@
   }
 
 .slider-container img{
-  height: 40px;
-  width: auto;
-  margin-top: 0;
-  margin-bottom: 10px
+  width: 110px ;
+  height: auto;
+  
+  
 }
 
 
@@ -31,8 +35,8 @@
   }
 
   .slider-container img{
-    height: 80px;
-    width: auto;
+    height: auto;
+    width: 150px;
     
   }
 

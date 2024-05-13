@@ -5,6 +5,7 @@ import { LogoData } from '../../@types/interface';
 import logoPeiture from '../../assets/logoSansFond.png';
 import insta from '../../assets/instagram_icon.png';
 import linkedin from '../../assets/linkedin_icon.png';
+
 // import { SliderProps } from '../../@types/interface';
 
 function CarouselLogos() {
@@ -19,6 +20,7 @@ function CarouselLogos() {
     <div className="carousel-logos">
       {/* Utilisation du composant FullViewSlider avec les données des logos */}
       <FullViewSlider images={logos} />
+     
     </div>
   );
 }
