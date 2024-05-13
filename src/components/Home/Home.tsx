@@ -34,7 +34,7 @@ function Home() {
     {
       icon: quality,
       name: 'produit de qualité',
-      description: 'Produits de grande qualité',
+      description: 'Produits de qualité professionnelle',
     },
     {
       icon: advise,
