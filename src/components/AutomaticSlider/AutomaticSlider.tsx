@@ -12,10 +12,24 @@ function AutomaticSlider({ images } :SliderProps) {
     return () => clearInterval(interval);
   }, [images.length]);
 
+  const goToSlide = (index: number) => {
+    setCurrentIndex(index);
+  };
+
   return (
     <div className="slider">
       <img className='slider-image' src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
+      <div className="slider-dots">
+        {images.map((_, index) => (
+          <span
+            key={index}
+            className={`slider-dot ${index === currentIndex ? 'active' : ''}`}
+            onClick={() => goToSlide(index)}
+          />
+        ))}
+      </div>
     </div>
+    
   );
 }
 

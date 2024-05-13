@@ -55,7 +55,7 @@ function Home() {
         </blockquote> 
         
         <div className='illustration-slider'>
-          <Slider images={images} />
+          <AutomaticSlider images={images} />
         </div>
 
       </section>
