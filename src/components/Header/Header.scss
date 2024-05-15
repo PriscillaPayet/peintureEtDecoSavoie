@@ -1,5 +1,26 @@
 @import '../../styles/variables';
 
+.custom-shape-divider-top-1715758481 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1715758481 svg {
+  position: relative;
+  display: block;
+  width: calc(214% + 1.3px);
+  height: 16px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1715758481 .shape-fill {
+  fill: #ABCB24;
+}
 
 .sticky {
   position: fixed;
@@ -8,6 +29,7 @@
   z-index: 1000;
   background-color: rgba(0,0,0, 0.7);
 }
+
 
 
 .header-logo img{
@@ -184,6 +206,8 @@ display: none;
   .pink{
     color: $green;
   }
+
+  
 }
 
 

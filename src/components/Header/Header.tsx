@@ -101,55 +101,67 @@ function Header() {
 
   return (
  
-    <header className={isSticky ? 'sticky' : ''}>
-      <div className='header-container'>
-      <NavLink className="header-logo" to="/">
-        
-        <span className="sr-only">Accueil</span>
-        <img className="logo" src={logoSansFond} alt="logo Pinture et Déco" />
-    
-      </NavLink>
-
-      <button className="header-burger" onClick={handleClick} >
-        <span className={topBarClassName} id="topBar"></span>
-        <span className={centerBarClassName} id="centerBar"></span>
-        <span className={bottomBarClassName} id="bottomBar"></span>
-      </button>
-      
-      {openMenu && windowWidth < 900 && ( 
-      <nav className='header-nav'>
-        <ul>
-          <li><NavLink to="/products" onClick={handleCloseMenu}> Nos produits </NavLink></li>
-          <li><NavLink to="/about" onClick={handleCloseMenu}> A propos </NavLink></li>
-          <li><NavLink to="/contact" onClick={handleCloseMenu}> Contact </NavLink></li>
-          <li><NavLink to="#" onClick={handleCloseMenu}> Avis clients </NavLink></li>
-        </ul>
-      </nav>
-      )}
-
-      <time>{`Aujourd'hui, ${openingHours}`}.</time>
-
-      { windowWidth > 900 && ( 
-
-        <nav className='header-bigScreenNav'>
-          <ul>
-            <li><NavLink to="/products">Nos produits</NavLink></li>
-            <li className='pink'>|</li>
-            <li><NavLink to="/about"> A propos</NavLink></li>
-            <li className='pink'>|</li>
-            <li><NavLink to="#"> Contact</NavLink></li>
-            <li className='pink'>|</li>
-            <li><NavLink to="#"> Avis clients</NavLink></li>
-          </ul>
-        </nav>
-
-        )}
-        
-
+    <>
+    <div className="custom-shape-divider-top-1715758481">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" className="shape-fill"></path>
+      </svg>
     </div>
+    
+    <header className={isSticky ? 'sticky' : ''}>
 
-        
-    </header>
+        <div className='header-container'>
+
+          <NavLink className="header-logo" to="/">
+
+            <span className="sr-only">Accueil</span>
+            <img className="logo" src={logoSansFond} alt="logo Pinture et Déco" />
+
+          </NavLink>
+
+          <button className="header-burger" onClick={handleClick}>
+            <span className={topBarClassName} id="topBar"></span>
+            <span className={centerBarClassName} id="centerBar"></span>
+            <span className={bottomBarClassName} id="bottomBar"></span>
+          </button>
+
+          {openMenu && windowWidth < 900 && (
+
+            <nav className='header-nav'>
+              <ul>
+                <li><NavLink to="/products" onClick={handleCloseMenu}> Nos produits </NavLink></li>
+                <li><NavLink to="/about" onClick={handleCloseMenu}> A propos </NavLink></li>
+                <li><NavLink to="/contact" onClick={handleCloseMenu}> Contact </NavLink></li>
+                <li><NavLink to="#" onClick={handleCloseMenu}> Avis clients </NavLink></li>
+              </ul>
+            </nav>
+          )}
+
+          <time>{`Aujourd'hui, ${openingHours}`}.</time>
+
+          {windowWidth > 900 && (
+
+
+            <nav className='header-bigScreenNav'>
+              <ul>
+                <li><NavLink to="/products">Nos produits</NavLink></li>
+                <li className='pink'>|</li>
+                <li><NavLink to="/about"> A propos</NavLink></li>
+                <li className='pink'>|</li>
+                <li><NavLink to="#"> Contact</NavLink></li>
+                <li className='pink'>|</li>
+                <li><NavLink to="#"> Avis clients</NavLink></li>
+              </ul>
+            </nav>
+
+
+          )}
+
+
+        </div>
+      </header></>
+
+
     
   );
 }

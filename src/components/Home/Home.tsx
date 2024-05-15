@@ -1,5 +1,4 @@
 import './Home.scss';
-import Slider from '../../components/Slider/Slider';
 import IntroductionSection from '../IntroductionSection/IntroductionText';
 import AutomaticSlider from '../AutomaticSlider/AutomaticSlider';
 import QualitiesIcons from '../QualitiesIcons/QualitiesIcons';
@@ -46,7 +45,9 @@ function Home() {
 
 
   return(
+
     <div className='home-container'>
+      
 
       <section className='home-illustration'>
 
@@ -61,8 +62,10 @@ function Home() {
       </section>
 
       <section className='introduction-section'>
-
+      
+        
         <div className='text-container'>
+          
           <IntroductionText
             title="Qui sommes-nous?"
             subtitle=""
