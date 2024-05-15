@@ -10,6 +10,7 @@ import Floors from '../Floors/Floors';
 import Walls from '../Walls/Walls';
 import Paints from '../Paints/Paints';
 import Contact from "../Contact/Contact";
+import OtherProducts from '../OtherProducts/OtherProducts';
 
 
 function App() {
@@ -23,7 +24,9 @@ function App() {
         <Route path="/products/floors" element={<Floors />} />
         <Route path="/products/walls" element={<Walls />} />
         <Route path="/products/paints" element={<Paints />} />
+        <Route path="/products/others" element={<OtherProducts />} />
         <Route path="/contact" element={<Contact formData={[]} />} />
+        
       </Routes>
       
       < Footer />
