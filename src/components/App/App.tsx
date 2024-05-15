@@ -9,6 +9,7 @@ import Products from '../Products/Products';
 import Floors from '../Floors/Floors';
 import Walls from '../Walls/Walls';
 import Paints from '../Paints/Paints';
+import Contact from "../Contact/Contact";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/products/floors" element={<Floors />} />
         <Route path="/products/walls" element={<Walls />} />
         <Route path="/products/paints" element={<Paints />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       
       < Footer />

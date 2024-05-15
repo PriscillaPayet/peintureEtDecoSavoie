@@ -28,3 +28,10 @@ export interface IntroductionTextProps {
   subtitle: string;
   paragraph: string;
 }
+
+export interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
