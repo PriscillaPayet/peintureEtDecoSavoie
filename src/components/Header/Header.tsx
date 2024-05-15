@@ -148,7 +148,7 @@ function Header() {
                 <li className='pink'>|</li>
                 <li><NavLink to="/about"> A propos</NavLink></li>
                 <li className='pink'>|</li>
-                <li><NavLink to="#"> Contact</NavLink></li>
+                <li><NavLink to="/contact"> Contact</NavLink></li>
                 <li className='pink'>|</li>
                 <li><NavLink to="#"> Avis clients</NavLink></li>
               </ul>

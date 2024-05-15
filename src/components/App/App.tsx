@@ -23,7 +23,7 @@ function App() {
         <Route path="/products/floors" element={<Floors />} />
         <Route path="/products/walls" element={<Walls />} />
         <Route path="/products/paints" element={<Paints />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact formData={[]} />} />
       </Routes>
       
       < Footer />

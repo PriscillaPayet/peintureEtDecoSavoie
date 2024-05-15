@@ -1,6 +1,8 @@
 @import '../../styles/variables';
 
-
+.contact-container{
+  margin-top: 10px;
+}
 form{
   width: 80%;
   margin: 50px auto ;
@@ -37,6 +39,12 @@ textarea {
   min-height: 150px;
 }
 
+.captcha-container {
+  width: 100%; /* Utilise toute la largeur disponible */
+  display: flex;
+  justify-content: start; /* Centre le captcha horizontalement */
+  margin-top: 20px; /* Espacement supplémentaire entre le captcha et le bouton */
+}
 
 .submitButton {
   padding: 12px 20px;
@@ -47,6 +55,8 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 10px;
+ 
 }
 
 .submitButton:hover {
@@ -54,7 +64,7 @@ textarea {
 }
 
 .submitButton:disabled {
-  background-color: #ccc;
+  background-color: $lightGrey;
   cursor: not-allowed;
 }
 

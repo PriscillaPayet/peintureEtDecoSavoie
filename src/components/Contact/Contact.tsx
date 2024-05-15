@@ -1,5 +1,5 @@
 import './Contact.scss';
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState, ChangeEvent, FormEvent, useEffect } from 'react';
 import { FormData } from '../../@types/interface';
 import ReCAPTCHA from 'react-google-recaptcha';
 
@@ -30,6 +30,8 @@ function Contact({ formData }: { formData: FormData[] }) {
     // Mettez à jour votre état avec la valeur du captcha
     setCaptchaValue(value);
   };
+
+ 
 
   return (
     <div className="contact-container">
@@ -78,10 +80,13 @@ function Contact({ formData }: { formData: FormData[] }) {
             required
           ></textarea>
         </div>
-        <ReCAPTCHA
-        sitekey="6LcZKt0pAAAAADl-XUGOrlgXOFQEoMLyhp_T8vnC"
-        onChange={handleRecaptchaChange}
-      />
+      <div className='captcha-container'>
+          <ReCAPTCHA
+          sitekey="6LcZKt0pAAAAADl-XUGOrlgXOFQEoMLyhp_T8vnC"
+          onChange={handleRecaptchaChange}
+          size="compact"
+          /></div>
+        
         <button className="submitButton"type="submit">Envoyer</button>
       </form>
     </div>
