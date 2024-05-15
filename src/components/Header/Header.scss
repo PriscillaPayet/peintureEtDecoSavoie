@@ -71,11 +71,11 @@
 
 .header-nav{
   display: flex;
+  text-transform: uppercase;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   color: $lightGrey;
-  font-weight: 800;
   text-align: center;
   line-height: 5em;
   height: 50%;
@@ -84,9 +84,9 @@
   z-index: 1000;
   border-bottom: 3px solid $green;
 
-  
-
 }
+
+
 
 
 .cross-one{
@@ -162,6 +162,8 @@ display: none;
     margin-top: 30px;
   }
 
+ 
+
   .header-logo img{
     width: 250px ;
     margin-right: auto;
@@ -192,7 +194,8 @@ display: none;
   .header-bigScreenNav{
     grid-column: 2/3;
     grid-row: 2/3;
-    font-weight: 800;
+    text-transform: uppercase;
+   
     
   }
 

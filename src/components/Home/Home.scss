@@ -18,28 +18,8 @@ img{
 }
 
 
-.slider-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.slider-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color:$lightGrey;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.slider-dot.active {
-  background-color: $darkGrey;
-}
-
 blockquote{
-  text-transform: uppercase;
-  font-size: .8em;
+  font-family: $trocchi;
   padding-bottom: 20px;
   margin-top: 20px;
 

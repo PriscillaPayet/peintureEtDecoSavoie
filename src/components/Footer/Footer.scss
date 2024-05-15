@@ -2,7 +2,7 @@
 
 
 .footer-container{
-  background-color: white;
+  background-color: $lightGrey;
   color: $darkGrey;
   width: 100%;
 
@@ -64,7 +64,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $black;
+  background-color: $darkGrey;
   color: $lightGrey;
   text-transform: uppercase;
 }

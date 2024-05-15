@@ -48,13 +48,13 @@ function Home() {
 
     <div className='home-container'>
       
+      {/* <blockquote className='accroche'>
+          Bienvenue dans l'univers de Peinture et Déco Savoie, la solution déco particulier et professionnel. 
+      </blockquote>  */}
+
 
       <section className='home-illustration'>
 
-        <blockquote className='accroche'>
-          Bienvenue dans l'univers de Peinture et Déco Savoie, la solution déco particulier et professionnel. 
-        </blockquote> 
-        
         <div className='illustration-slider'>
           <AutomaticSlider images={images} />
         </div>

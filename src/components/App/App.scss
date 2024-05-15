@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 
 body{
-  background-color: $black;
+  background-color: $darkGrey;
   color: $lightGrey;
   font-family: $OpenSans;
 
@@ -15,13 +15,13 @@ body{
 }
 
 .title{
-  background-color: white;
-  color: $black;
+  background-color: $lightGrey;
+  color: $darkGrey;
 }
 
 .whiteTitle{
   background-color: none;
-  color: white;
+  color: $lightGrey;
 }
 
 
@@ -30,14 +30,14 @@ body{
 }
 
 .subtitle,  .whiteSubtitle{
-  color: $black;
+  color: $darkGrey;
   font-family: $playlist;
   text-align: center;
   font-size: 1.5em;
 }
 
 .whiteSubtitle{
-  color: white;
+  color: $lightGrey;
   font-family: $trocchi;
 }
 

@@ -15,7 +15,7 @@ import casadeco from '../assets/logos-fournisseurs/mur/casadeco.webp';
 import outilParfait from '../assets/logos-fournisseurs/autre/outilParfait.png';
 import romus from '../assets/logos-fournisseurs/autre/romus.png';
 import blanchon from '../assets/logos-fournisseurs/autre/blanchon.png';
-import uzin from '../assets/logos-fournisseurs/autre/uzin.svg';
+import uzin from '../assets/logos-fournisseurs/autre/uzin-logo.png';
 import bessier from '../assets/logos-fournisseurs/autre/beissier.png';
 import komar from '../assets/logos-fournisseurs/mur/komar.png';
 

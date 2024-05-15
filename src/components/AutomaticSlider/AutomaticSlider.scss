@@ -1,4 +1,25 @@
+@import '../../styles/variables';
+
 .slider img{
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $lightGrey;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slider-dot.active {
+  background-color: $grey;
 }

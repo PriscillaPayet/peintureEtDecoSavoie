@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { SliderProps } from '../../@types/interface';
+import './AutomaticSlider.scss';
 
 function AutomaticSlider({ images } :SliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
