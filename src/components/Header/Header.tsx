@@ -140,16 +140,16 @@ function Header() {
 
             <nav className='header-bigScreenNav'>
               <ul>
+                <li><NavLink to="/">Accueil</NavLink></li>
+
                 <li><NavLink to="/products">Nos produits</NavLink></li>
-                <li className='pink'>|</li>
+                
                 <li><NavLink to="/about"> A propos</NavLink></li>
-                <li className='pink'>|</li>
+               
                 <li><NavLink to="/contact"> Contact</NavLink></li>
-                <li className='pink'>|</li>
-                <li><NavLink to="#"> Avis clients</NavLink></li>
+              
               </ul>
             </nav>
-
 
           )}
 

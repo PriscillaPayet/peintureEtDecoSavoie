@@ -36,28 +36,53 @@
 }
 
 .horaire-container p{
-  font-family: $trocchi;
   width: 300px;
   margin-top: 0;
+  font-family: $trocchi;
+  
 }
 
+.address img{
+width: 40px;
+margin: 0;
+display: none;
+}
 
-
-.phone, .email, .rs{
+.phone, .email, .address{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 40%;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px auto;
+  font-weight: 600;
+}
+
+.address{
+  width: 60%;
+}
+
+.address address{
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.rs ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.phoneLink:hover, .emailLink:hover{
+  font-weight: 800;
 
 }
 
 .rs img{
-  margin-right: 30px;
+ margin: 10px;
 }
+
 
 .footer-bottom{
   font-size: 0.85em;
@@ -79,6 +104,12 @@
 
 
 @media screen and (min-width: 1200px) {
+
+  .address img{
+    display:inline;
+  }
+ 
+
   .footer-bottom-list{
     width: 100%;
     display: flex;
