@@ -26,10 +26,10 @@ class ContactController extends Controller
         ];
 
         // Envoyer l'email
-        Mail::send('emails.contact', $data, function ($message) use ($data) {
-            $message->from('your-email@your-domain.com', 'Your Site Name');
-            $message->to('store-email@example.com') // Adresse email du magasin
-                    ->subject('New Contact Form Submission');
+        Mail::send('contact.blade.php', $data, function ($message) use ($data) {
+            $message->from(env('MAIL_FROM_ADDRESS', 'default-email@example.com'), env('MAIL_FROM_NAME', 'Default Name'));
+            $message->to(env('STORE_EMAIL')) // Adresse email du magasin
+                    ->subject('Un nouveau formulaire a été envoyé');
         });
 
         // Répondre avec un message JSON indiquant que l'email a été envoyé avec succès

@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 
 
-Route::post('/contact', [ContactController::class, 'send']);
+
