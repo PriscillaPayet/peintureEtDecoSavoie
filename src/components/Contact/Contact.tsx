@@ -1,41 +1,56 @@
 import './Contact.scss';
-import React, { useState, ChangeEvent, FormEvent, useEffect } from 'react';
-import { FormData } from '../../@types/interface';
-import ReCAPTCHA from 'react-google-recaptcha';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
+import axios from 'axios';
 
-function Contact({ formData }: { formData: FormData[] }) {
-  const [formValues, setFormValues] = useState<FormData>({
+function Contact() {
+  const [formValues, setFormValues] = useState({
     name: '',
     email: '',
     phone: '',
     message: ''
   });
 
-  const [captchaValue, setCaptchaValue] = useState<string | null>(null);
+  const [responseMessage, setResponseMessage] = useState('');
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const isValidEmail = (email: string) => /\S+@\S+\.\S+/.test(email);
+  const isValidPhone = (phone: string) => /^\d{10}$/.test(phone);
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Envoyer les données du formulaire (formValues) à votre backend ou effectuer une action appropriée
-    console.log(formValues);
-    // Réinitialiser le formulaire après soumission
-    setFormValues({ name: '', email: '', phone: '', message: '' });
-  };
 
-  const handleRecaptchaChange = (value: string | null) => {
-    // Mettez à jour votre état avec la valeur du captcha
-    setCaptchaValue(value);
-  };
+    if (!isValidEmail(formValues.email)) {
+      setResponseMessage('Invalid email format');
+      return;
+    }
 
- 
+    if (!isValidPhone(formValues.phone)) {
+      setResponseMessage('Invalid phone number format');
+      return;
+    }
+
+    try {
+      const response = await axios.post('http://localhost:8000/send_email.php', formValues);
+      setResponseMessage('Email sent successfully');
+      setFormValues({ name: '', email: '', phone: '', message: '' });
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        console.error('Axios error:', error.response?.data);
+      } else {
+        console.error('Unknown error', error);
+      }
+      setResponseMessage('Failed to send email');
+    }
+  };
 
   return (
     <div className="contact-container">
       <h2 className='title'>Contact</h2>
+      {responseMessage && <p className='formResponse'>{responseMessage}</p>}
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Nom</label>
@@ -46,6 +61,7 @@ function Contact({ formData }: { formData: FormData[] }) {
             value={formValues.name}
             onChange={handleChange}
             required
+            autoComplete="name"
           />
         </div>
         <div className="form-group">
@@ -57,6 +73,7 @@ function Contact({ formData }: { formData: FormData[] }) {
             value={formValues.email}
             onChange={handleChange}
             required
+            autoComplete="email"
           />
         </div>
         <div className="form-group">
@@ -68,6 +85,7 @@ function Contact({ formData }: { formData: FormData[] }) {
             value={formValues.phone}
             onChange={handleChange}
             required
+            autoComplete="tel"
           />
         </div>
         <div className="form-group">
@@ -80,19 +98,11 @@ function Contact({ formData }: { formData: FormData[] }) {
             required
           ></textarea>
         </div>
-      <div className='captcha-container'>
-          <ReCAPTCHA
-          sitekey="6LcZKt0pAAAAADl-XUGOrlgXOFQEoMLyhp_T8vnC"
-          onChange={handleRecaptchaChange}
-          size="compact"
-          /></div>
-        
-        <button className="submitButton"type="submit">Envoyer</button>
+        <button className="submitButton" type="submit">Envoyer</button>
       </form>
+     
     </div>
   );
 }
 
 export default Contact;
-
-

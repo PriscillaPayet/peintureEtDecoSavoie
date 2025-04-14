@@ -66,6 +66,14 @@ textarea {
   cursor: not-allowed;
 }
 
+.formResponse{
+  text-align: center;
+  font-weight: 800;
+  color: red;
+  margin-top: 50px;
+
+}
+
 @media (min-width: 900px){
   form{
     width: 50%;
