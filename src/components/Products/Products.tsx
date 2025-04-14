@@ -7,6 +7,8 @@ import test4 from '../../assets/test4.jpg';
 import CategoryList from '../CategoryList/CategoryList';
 import FullViewSlider from '../FullViewSlider/FullViewSlider';
 import { logos } from '../../data/data';
+import freepix_peinture from "../../assets/freepix_peinture.jpg";
+import freepix_sol from "../../assets/freepix_sol.jpg";
 
 
 
@@ -15,12 +17,12 @@ function Products() {
   const categories: ProductData[] = [
     {
       productName: 'Revêtement de sol',
-      productImage: test2,
+      productImage: freepix_sol,
       productLink: '/products/floors'
     },
     {
       productName: 'Peinture',
-      productImage: test3,
+      productImage: freepix_peinture,
       productLink: '/products/paints'
     },
     {
