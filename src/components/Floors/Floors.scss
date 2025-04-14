@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.floorCategory-list ul li{
+  width: 100%;
+  padding: 0;
+
+}
+
+@media (min-width: 900px){
+  .floorCategory-list ul li{
+    width: 33.33%;
+    padding: 5px;
+  }
+}

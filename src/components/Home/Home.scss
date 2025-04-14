@@ -1,0 +1,98 @@
+@import '../../styles/variables';
+
+img{
+  margin: auto;
+  width: auto;
+
+}
+
+
+
+
+.home-container{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+blockquote{
+  font-family: $trocchi;
+  padding-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+
+.introduction-img{
+  margin-bottom:20px;
+  margin-top:20px;
+}
+
+.qualities-container {
+  width: 100vw;
+  background-color: $lightGrey;
+  color: $darkGrey;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center;
+  
+}
+
+.quality {
+  width: 50%;
+  padding: 20px;
+}
+
+
+.introduction-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.text-container, .automaticSlider-container {
+  flex: 0 0 100%; /* Les éléments prennent 100% de la largeur par défaut */
+}
+
+
+
+
+@media (min-width: 900px) {
+
+
+  .introduction-section{
+    flex-direction: row;
+    flex-wrap:wrap;
+  }
+
+  .text-container, .introduction-img{
+    flex: 0 0 45%; /* Les éléments prennent 45% de la largeur à partir de 900px */
+    margin: 20px;
+  }
+
+
+  .accroche{
+    padding-top: 20px;
+    font-size: 1em;
+  }
+
+
+  .quality {
+    width: 25%;
+  }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+}
+

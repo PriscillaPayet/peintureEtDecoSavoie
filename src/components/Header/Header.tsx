@@ -93,65 +93,71 @@ function Header() {
     };
   }, []);
 
+    const handleCloseMenu = () => {
+    setOpenMenu(false);
+    }
+
+
+
   return (
  
+    <>
+  
+    
     <header className={isSticky ? 'sticky' : ''}>
-      <div className='header-container'>
-      <NavLink className="header-logo" to="/">
-        
-        <span className="sr-only">Accueil</span>
-        <img className="logo" src={logoSansFond} alt="logo Pinture et Déco" />
-    
-      </NavLink>
 
-      <button className="header-burger" onClick={handleClick} >
-        <span className={topBarClassName} id="topBar"></span>
-        <span className={centerBarClassName} id="centerBar"></span>
-        <span className={bottomBarClassName} id="bottomBar"></span>
-      </button>
-      
-      {openMenu && windowWidth < 900 && ( 
-      <nav className='header-nav'>
-        <ul>
-          <li><NavLink to="#"> Nos produits </NavLink></li>
-          <li><NavLink to="#"> A propos </NavLink></li>
-          <li><NavLink to="#"> Contact </NavLink></li>
-          <li><NavLink to="#"> Avis clients </NavLink></li>
-        </ul>
-      </nav>
-      )}
+        <div className='header-container'>
 
-      <time>{`Aujourd'hui, ${openingHours}`}.</time>
+          <NavLink className="header-logo" to="/">
 
-      { windowWidth > 900 && ( 
+            <span className="sr-only">Accueil</span>
+            <img className="logo" src={logoSansFond} alt="logo Pinture et Déco" />
 
-        <nav className='header-bigScreenNav'>
-          <ul>
-            <li><NavLink to="#">Nos produits</NavLink></li>
-            <li className='pink'>|</li>
-            <li><NavLink to="#"> A propos</NavLink></li>
-            <li className='pink'>|</li>
-            <li><NavLink to="#"> Contact</NavLink></li>
-            <li className='pink'>|</li>
-            <li><NavLink to="#"> Avis clients</NavLink></li>
-          </ul>
-        </nav>
+          </NavLink>
 
-        )}
+          <button className="header-burger" onClick={handleClick}>
+            <span className={topBarClassName} id="topBar"></span>
+            <span className={centerBarClassName} id="centerBar"></span>
+            <span className={bottomBarClassName} id="bottomBar"></span>
+          </button>
 
-    </div>
-      
-     
-    
+          {openMenu && windowWidth < 900 && (
 
-      {/* 
-      à déplacer sur home 
-      <blockquote>
-        Bienvenue dans l'univers de Peinture et Déco Savoie, la solution déco particulier et professionnel. 
-      </blockquote> */} 
-      
-        
-    </header>
+            <nav className='header-nav'>
+              <ul>
+                <li><NavLink to="/products" onClick={handleCloseMenu}> Nos produits </NavLink></li>
+                <li><NavLink to="/about" onClick={handleCloseMenu}> A propos </NavLink></li>
+                <li><NavLink to="/contact" onClick={handleCloseMenu}> Contact </NavLink></li>
+                <li><NavLink to="#" onClick={handleCloseMenu}> Avis clients </NavLink></li>
+              </ul>
+            </nav>
+          )}
+
+          <time>{`Aujourd'hui, ${openingHours}`}.</time>
+
+          {windowWidth > 900 && (
+
+
+            <nav className='header-bigScreenNav'>
+              <ul>
+                <li><NavLink to="/">Accueil</NavLink></li>
+
+                <li><NavLink to="/products">Nos produits</NavLink></li>
+                
+                <li><NavLink to="/about"> A propos</NavLink></li>
+               
+                <li><NavLink to="/contact"> Contact</NavLink></li>
+              
+              </ul>
+            </nav>
+
+          )}
+
+
+        </div>
+      </header></>
+
+
     
   );
 }

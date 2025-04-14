@@ -1,12 +1,57 @@
 @import '../../styles/variables';
 
 body{
-  background-color: $black;
+  background-color: $darkGrey;
   color: $lightGrey;
-  font-family: $bodyFont;
+  font-family: $OpenSans;
+
+}
+
+.title, .whiteTitle, .pinkTitle{
+  font-family: $playlist;
+  font-size: 3em;
+  text-align: center;
+  
+}
+
+.title{
+  background-color: $lightGrey;
+  color: $darkGrey;
+}
+
+.whiteTitle{
+  background-color: none;
+  color: $lightGrey;
 }
 
 
+ .pinkTitle{
+  background-color: $pink;
+}
+
+.subtitle,  .whiteSubtitle{
+  color: $darkGrey;
+  font-family: $playlist;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.whiteSubtitle{
+  color: $lightGrey;
+  font-family: $trocchi;
+}
+
+.pinkTitle{
+  background-color: $pink;
+  color: $lightGrey;
+}
+
+.paragraph{
+  text-align: justify;
+
+
+ 
+}
 
 
 

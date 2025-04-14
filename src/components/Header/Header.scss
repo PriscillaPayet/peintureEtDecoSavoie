@@ -1,26 +1,49 @@
 @import '../../styles/variables';
 
+.custom-shape-divider-top-1715758481 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1715758481 svg {
+  position: relative;
+  display: block;
+  width: calc(214% + 1.3px);
+  height: 16px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1715758481 .shape-fill {
+  fill: #ABCB24;
+}
+
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(0,0,0, 0.95);
+  background-color: rgba(0,0,0, 0.7);
 }
+
+
 
 .header-logo img{
   width:200px ;
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
+  margin-bottom: 20px;
   
   
 }
 
 .header-burger{
   cursor: pointer;
-  border-radius: 50%;
-  background-color: $black;
   width: 40px;
   height: 40px;
   padding-left: 9px;
@@ -48,11 +71,11 @@
 
 .header-nav{
   display: flex;
+  text-transform: uppercase;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   color: $lightGrey;
-  font-weight: 800;
   text-align: center;
   line-height: 5em;
   height: 50%;
@@ -61,9 +84,9 @@
   z-index: 1000;
   border-bottom: 3px solid $green;
 
-  
-
 }
+
+
 
 
 .cross-one{
@@ -139,11 +162,30 @@ display: none;
     margin-top: 30px;
   }
 
+  .header-bigScreenNav ul li:hover {
+    font-weight: 600;
+  }
+
+
+  .header-bigScreenNav ul li a.active {
+   text-decoration: underline;
+   text-decoration-color:$green;
+   text-underline-offset: 6px;
+   text-decoration-thickness: 1.5px;
+
+  }
+  
   .header-logo img{
-    width: 300px ;
+    width: 250px ;
     margin-right: auto;
     margin-left: auto;
     
+  }
+
+  .sticky img{
+    width: 200px;
+    opacity: .9;
+  
   }
   
   .header-container{
@@ -163,7 +205,8 @@ display: none;
   .header-bigScreenNav{
     grid-column: 2/3;
     grid-row: 2/3;
-    font-weight: 800;
+    text-transform: uppercase;
+   
     
   }
 
@@ -177,6 +220,8 @@ display: none;
   .pink{
     color: $green;
   }
+
+  
 }
 
 

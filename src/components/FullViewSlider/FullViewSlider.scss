@@ -1,0 +1,40 @@
+@import '../../styles/variables';
+
+.slider-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+  background-color: $lightGrey;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+  
+}
+
+.slider-image.second-previous, .slider-image.fourth-next {
+    display: none; 
+  }
+
+.slider-container img{
+  width: 120px ;
+  height: auto;
+  padding: 3px;
+  
+  
+}
+
+
+.slider-image{
+  flex-basis: 33.33%;
+}
+
+@media (min-width: 900px){
+  .slider-image.second-previous, .slider-image.fourth-next {
+    display: block; 
+  }
+
+
+
+}

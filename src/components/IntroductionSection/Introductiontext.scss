@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+
+
+.introduction-text h1{
+  font-family: $playlist;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.introduction-text h2, .introduction-text p{
+  padding: 15px;
+}
+
+
+  
